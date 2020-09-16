@@ -5,6 +5,7 @@
  */
 package sptvr19game;
 import java.util.Scanner;
+import java.util.Random;
 /**
  *
  * @author user
@@ -13,7 +14,8 @@ class App {
     public void run() {
         System.out.println("Угадай задуманное число");
         System.out.println("-------------------------");
-        int myNumber = 2;
+        Random random = new Random();
+        int myNumber = random.nextInt(5-0+1)+0;
         System.out.println("Задумано число от 0 до 5. Угадай!");
         Scanner scanner = new Scanner(System.in);
         int gamerNumber = scanner.nextInt();
